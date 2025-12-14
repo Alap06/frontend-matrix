@@ -389,6 +389,29 @@ const TeacherProfile = () => {
                         >
                             <FiLock /> Changer le mot de passe
                         </button>
+
+                        {/* Change Avatar Button */}
+                        <button
+                            onClick={() => setShowAvatarModal(true)}
+                            style={{
+                                width: '100%',
+                                marginTop: '0.75rem',
+                                padding: '0.75rem 1rem',
+                                borderRadius: '10px',
+                                border: 'none',
+                                background: 'linear-gradient(135deg, #8b5cf6, #a78bfa)',
+                                color: 'white',
+                                cursor: 'pointer',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                gap: '0.5rem',
+                                fontWeight: '500',
+                                transition: 'all 0.2s'
+                            }}
+                        >
+                            <FiImage /> Changer l'avatar
+                        </button>
                     </motion.div>
                 </div>
             </motion.div>
