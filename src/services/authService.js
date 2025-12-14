@@ -41,6 +41,16 @@ export const logout = async (refreshToken) => {
 }
 
 /**
+ * Refresh access token
+ * @param {string} token 
+ * @returns {Promise<{access: string}>}
+ */
+export const refreshToken = async (token) => {
+    const response = await api.post('/auth/token/refresh/', { refresh: token })
+    return response.data
+}
+
+/**
  * Get current authenticated user
  * @returns {Promise<Object>}
  */
@@ -93,6 +103,7 @@ export default {
     login,
     register,
     logout,
+    refreshToken,
     getCurrentUser,
     changePassword,
     forgotPassword,

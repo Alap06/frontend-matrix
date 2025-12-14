@@ -23,6 +23,7 @@ import StudentAbsences from './pages/student/StudentAbsences'
 import StudentClubs from './pages/student/StudentClubs'
 import StudentReclamations from './pages/student/StudentReclamations'
 import StudentSchedule from './pages/student/StudentSchedule'
+import ChatbotPage from './pages/student/ChatbotPage'
 
 // Pages - Teacher Dashboard
 import TeacherDashboard from './pages/teacher/TeacherDashboard'
@@ -105,6 +106,7 @@ function App() {
           <Route path="clubs" element={<StudentClubs />} />
           <Route path="reclamations" element={<StudentReclamations />} />
           <Route path="schedule" element={<StudentSchedule />} />
+          <Route path="chatbot" element={<ChatbotPage />} />
         </Route>
 
         {/* Teacher Routes */}
