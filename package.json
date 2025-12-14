@@ -1,0 +1,55 @@
+{
+  "name": "sge-frontend",
+  "version": "1.0.0",
+  "description": "Système de Gestion Étudiant - Frontend React",
+  "private": true,
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^1.6.2",
+    "chart.js": "^4.5.1",
+    "date-fns": "^3.0.6",
+    "framer-motion": "^10.16.16",
+    "i18next": "^23.7.11",
+    "jwt-decode": "^4.0.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.2",
+    "react-i18next": "^13.5.0",
+    "react-icons": "^4.12.0",
+    "react-intersection-observer": "^10.0.0",
+    "react-router-dom": "^6.20.0",
+    "react-toastify": "^9.1.3",
+    "recharts": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "vite": "^5.0.8"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

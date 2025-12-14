@@ -1,0 +1,249 @@
+{
+  "common": {
+    "welcome": "مرحبا",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "register": "التسجيل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "resetPassword": "إعادة تعيين كلمة المرور",
+    "submit": "إرسال",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "view": "عرض",
+    "download": "تحميل",
+    "upload": "رفع",
+    "search": "بحث",
+    "filter": "تصفية",
+    "loading": "جاري التحميل...",
+    "noData": "لا توجد بيانات متاحة",
+    "error": "خطأ",
+    "success": "نجح",
+    "warning": "تحذير",
+    "info": "معلومات"
+  },
+  "nav": {
+    "home": "الصفحة الرئيسية",
+    "dashboard": "لوحة القيادة",
+    "profile": "الملف الشخصي",
+    "documents": "الوثائق",
+    "grades": "الدرجات",
+    "absences": "الغيابات",
+    "clubs": "النوادي",
+    "reclamations": "الشكاوى",
+    "classes": "الفصول",
+    "students": "الطلاب",
+    "teachers": "المعلمون",
+    "administration": "الإدارة"
+  },
+  "home": {
+    "title": "نظام إدارة الطلاب",
+    "subtitle": "المعهد العالي للعلوم التطبيقية والتكنولوجيا بالقيروان",
+    "description": "منصة إدارة أكاديمية وإدارية حديثة وسهلة الاستخدام للمعهد العالي للعلوم التطبيقية والتكنولوجيا",
+    "getStarted": "ابدأ الآن",
+    "features": {
+      "title": "الميزات",
+      "documents": {
+        "title": "الوثائق الإدارية",
+        "description": "اطلب وقم بتنزيل شهاداتك عبر الإنترنت"
+      },
+      "grades": {
+        "title": "إدارة الدرجات",
+        "description": "استعرض درجاتك ونتائجك في الوقت الفعلي"
+      },
+      "clubs": {
+        "title": "النوادي والفعاليات",
+        "description": "انضم إلى النوادي وشارك في الفعاليات"
+      },
+      "reclamations": {
+        "title": "شكاوى آمنة",
+        "description": "قدم شكاوى مجهولة بشكل آمن"
+      }
+    },
+    "stats": {
+      "students": "طلاب",
+      "teachers": "معلمون",
+      "clubs": "نوادي نشطة",
+      "digital": "رقمي"
+    },
+    "news": {
+      "title": "الأخبار والفعاليات",
+      "subtitle": "ابق على اطلاع بآخر أخبار المعهد العالي بالقيروان",
+      "readMore": "اقرأ المزيد",
+      "category": {
+        "news": "أخبار",
+        "innovation": "ابتكار",
+        "events": "فعاليات"
+      }
+    },
+    "excellence": {
+      "title": "تميزنا",
+      "subtitle": "ما يميزنا",
+      "academic": {
+        "title": "التفوق الأكاديمي",
+        "description": "يتموضع معهد القيروان كمؤسسة مرجعية في مجال التدريب التكنولوجي."
+      },
+      "innovation": {
+        "title": "الابتكار التربوي",
+        "description": "أساليب تدريس حديثة تدمج أحدث التقنيات والممارسات الصناعية."
+      },
+      "studentLife": {
+        "title": "الحياة الطلابية",
+        "description": "حرم جامعي ديناميكي مع أكثر من 50 نادٍ وجمعية لإثراء مسيرتك الجامعية."
+      }
+    },
+    "about": {
+      "title": "عن المعهد العالي بالقيروان",
+      "description": "المعهد العالي للعلوم التطبيقية والتكنولوجيا بالقيروان هو مؤسسة تعليم عالي متميزة تشكل مهندسي وتقنيي الغد.",
+      "highlights": {
+        "accredited": "تكوينات معتمدة ومعترف بها",
+        "modern": "معدات حديثة ومختبرات مجهزة",
+        "partnerships": "شراكات دولية",
+        "employment": "مرافقة نحو التوظيف"
+      },
+      "stats": {
+        "programs": "برنامج تدريبي",
+        "employment": "معدل الإدماج المهني",
+        "partners": "شركاء دوليين"
+      }
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "subtitle": "فريقنا في خدمتك",
+      "info": "معلومات الاتصال",
+      "address": "العنوان",
+      "addressValue": "شارع أسعد بن فرات، القيروان 3100، تونس",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "hours": "ساعات العمل",
+      "hoursWeek": "الإثنين - الجمعة: 8:00 - 17:00",
+      "hoursSaturday": "السبت: 8:00 - 12:00",
+      "form": {
+        "title": "أرسل لنا رسالة",
+        "name": "الاسم الكامل",
+        "namePlaceholder": "اسمك",
+        "emailPlaceholder": "your.email@example.com",
+        "subject": "الموضوع",
+        "subjectPlaceholder": "موضوع رسالتك",
+        "message": "الرسالة",
+        "messagePlaceholder": "رسالتك...",
+        "send": "إرسال الرسالة",
+        "required": "*"
+      }
+    },
+    "footer": {
+      "description": "المعهد العالي للعلوم التطبيقية والتكنولوجيا بالقيروان",
+      "quickLinks": "روابط سريعة",
+      "resources": "الموارد",
+      "copyright": "جميع الحقوق محفوظة.",
+      "links": {
+        "formations": "التكوينات",
+        "news": "الأخبار",
+        "library": "المكتبة",
+        "clubs": "النوادي والجمعيات",
+        "studentLife": "الحياة الطلابية",
+        "help": "مركز المساعدة"
+      }
+    }
+  },
+  "auth": {
+    "loginTitle": "تسجيل الدخول إلى حسابك",
+    "registerTitle": "إنشاء حساب",
+    "forgotPasswordTitle": "نسيت كلمة المرور",
+    "resetPasswordTitle": "إعادة تعيين كلمة المرور",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "studentId": "رقم الطالب",
+    "phone": "الهاتف",
+    "rememberMe": "تذكرني",
+    "noAccount": "ليس لديك حساب؟",
+    "haveAccount": "هل لديك حساب بالفعل؟",
+    "signUp": "التسجيل",
+    "signIn": "تسجيل الدخول",
+    "sendResetLink": "إرسال رابط إعادة التعيين",
+    "backToLogin": "العودة إلى تسجيل الدخول",
+    "userType": "نوع المستخدم",
+    "student": "طالب",
+    "teacher": "معلم",
+    "admin": "مدير"
+  },
+  "student": {
+    "dashboard": {
+      "welcome": "مرحبا",
+      "overview": "نظرة عامة",
+      "quickStats": "إحصائيات سريعة",
+      "recentActivity": "النشاط الأخير",
+      "upcomingEvents": "الأحداث القادمة"
+    },
+    "documents": {
+      "title": "وثائقي",
+      "request": "طلب وثيقة",
+      "pending": "قيد الانتظار",
+      "approved": "تمت الموافقة",
+      "rejected": "مرفوض",
+      "types": {
+        "presence": "شهادة حضور",
+        "inscription": "شهادة تسجيل",
+        "success": "شهادة نجاح",
+        "transcript": "كشف الدرجات"
+      }
+    },
+    "grades": {
+      "title": "درجاتي",
+      "semester": "الفصل الدراسي",
+      "average": "المعدل",
+      "subject": "المادة",
+      "exam": "امتحان",
+      "tp": "أعمال تطبيقية",
+      "td": "أعمال موجهة"
+    }
+  },
+  "teacher": {
+    "dashboard": {
+      "welcome": "مساحة المعلم",
+      "myClasses": "فصولي",
+      "todaySchedule": "جدول اليوم"
+    },
+    "classes": {
+      "title": "إدارة الفصول",
+      "students": "الطلاب",
+      "subjects": "المواد"
+    },
+    "grades": {
+      "title": "إدخال الدرجات",
+      "enterGrades": "إدخال الدرجات",
+      "validate": "تأكيد"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "welcome": "لوحة الإدارة",
+      "statistics": "الإحصائيات",
+      "totalStudents": "إجمالي الطلاب",
+      "totalTeachers": "إجمالي المعلمين",
+      "pendingDocuments": "الوثائق المعلقة",
+      "activeClubs": "النوادي النشطة"
+    },
+    "students": {
+      "title": "إدارة الطلاب",
+      "addStudent": "إضافة طالب",
+      "editStudent": "تعديل الطالب",
+      "studentList": "قائمة الطلاب"
+    },
+    "documents": {
+      "title": "إدارة الوثائق",
+      "approve": "الموافقة",
+      "reject": "رفض",
+      "generate": "إنشاء"
+    },
+    "clubs": {
+      "title": "إدارة النوادي",
+      "approve": "الموافقة على النادي",
+      "reject": "رفض النادي"
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "common": {
+    "welcome": "Bienvenue",
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "register": "Inscription",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "forgotPassword": "Mot de passe oublié?",
+    "resetPassword": "Réinitialiser le mot de passe",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "view": "Voir",
+    "download": "Télécharger",
+    "upload": "Uploader",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "loading": "Chargement...",
+    "noData": "Aucune donnée disponible",
+    "error": "Erreur",
+    "success": "Succès",
+    "warning": "Attention",
+    "info": "Information"
+  },
+  "nav": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "profile": "Profil",
+    "documents": "Documents",
+    "grades": "Notes",
+    "absences": "Absences",
+    "clubs": "Clubs",
+    "reclamations": "Réclamations",
+    "classes": "Classes",
+    "students": "Étudiants",
+    "teachers": "Enseignants",
+    "administration": "Administration"
+  },
+  "home": {
+    "title": "Système de Gestion Étudiant",
+    "subtitle": "ISSAT Kairouan",
+    "description": "Plateforme de gestion académique et administrative moderne et intuitive pour l'Institut Supérieur des Sciences Appliquées et de Technologie",
+    "getStarted": "Commencer",
+    "features": {
+      "title": "Fonctionnalités",
+      "documents": {
+        "title": "Documents Administratifs",
+        "description": "Demandez et téléchargez vos attestations en ligne"
+      },
+      "grades": {
+        "title": "Gestion des Notes",
+        "description": "Consultez vos notes et résultats en temps réel"
+      },
+      "clubs": {
+        "title": "Clubs & Événements",
+        "description": "Rejoignez des clubs et participez aux événements"
+      },
+      "reclamations": {
+        "title": "Réclamations Sécurisées",
+        "description": "Soumettez des réclamations anonymes en toute sécurité"
+      }
+    },
+    "stats": {
+      "students": "Étudiants",
+      "teachers": "Enseignants",
+      "clubs": "Clubs Actifs",
+      "digital": "Digital"
+    },
+    "news": {
+      "title": "Actualités & Événements",
+      "subtitle": "Restez informé des dernières nouvelles de l'ISSAT Kairouan",
+      "readMore": "Lire la suite",
+      "category": {
+        "news": "Actualités",
+        "innovation": "Innovation",
+        "events": "Événements"
+      }
+    },
+    "excellence": {
+      "title": "Notre Excellence",
+      "subtitle": "Ce qui nous distingue",
+      "academic": {
+        "title": "Excellence Académique",
+        "description": "ISSAT Kairouan se positionne comme un établissement de référence en matière de formation technologique."
+      },
+      "innovation": {
+        "title": "Innovation Pédagogique",
+        "description": "Des méthodes d'enseignement modernes intégrant les dernières technologies et pratiques industrielles."
+      },
+      "studentLife": {
+        "title": "Vie Estudiantine",
+        "description": "Un campus dynamique avec plus de 50 clubs et associations pour enrichir votre parcours universitaire."
+      }
+    },
+    "about": {
+      "title": "À Propos de l'ISSAT Kairouan",
+      "description": "L'Institut Supérieur des Sciences Appliquées et de Technologie de Kairouan est un établissement d'enseignement supérieur d'excellence qui forme les ingénieurs et techniciens de demain.",
+      "highlights": {
+        "accredited": "Formations accréditées et reconnues",
+        "modern": "Équipements modernes et laboratoires équipés",
+        "partnerships": "Partenariats internationaux",
+        "employment": "Accompagnement vers l'emploi"
+      },
+      "stats": {
+        "programs": "Programmes de Formation",
+        "employment": "Taux d'Insertion Professionnelle",
+        "partners": "Partenaires Internationaux"
+      }
+    },
+    "contact": {
+      "title": "Contactez-Nous",
+      "subtitle": "Notre équipe est à votre disposition",
+      "info": "Informations de Contact",
+      "address": "Adresse",
+      "addressValue": "Avenue Assad Iben Fourat, Kairouan 3100, Tunisie",
+      "phone": "Téléphone",
+      "email": "Email",
+      "hours": "Horaires",
+      "hoursWeek": "Lundi - Vendredi: 8h00 - 17h00",
+      "hoursSaturday": "Samedi: 8h00 - 12h00",
+      "form": {
+        "title": "Envoyez-nous un Message",
+        "name": "Nom Complet",
+        "namePlaceholder": "Votre nom",
+        "emailPlaceholder": "votre.email@exemple.com",
+        "subject": "Sujet",
+        "subjectPlaceholder": "Sujet de votre message",
+        "message": "Message",
+        "messagePlaceholder": "Votre message...",
+        "send": "Envoyer le Message",
+        "required": "*"
+      }
+    },
+    "footer": {
+      "description": "Institut Supérieur des Sciences Appliquées et de Technologie de Kairouan",
+      "quickLinks": "Liens Rapides",
+      "resources": "Ressources",
+      "copyright": "Tous droits réservés.",
+      "links": {
+        "formations": "Formations",
+        "news": "Actualités",
+        "library": "Bibliothèque",
+        "clubs": "Clubs & Associations",
+        "studentLife": "Vie Estudiantine",
+        "help": "Centre d'Aide"
+      }
+    }
+  },
+  "auth": {
+    "loginTitle": "Connexion à votre compte",
+    "registerTitle": "Créer un compte",
+    "forgotPasswordTitle": "Mot de passe oublié",
+    "resetPasswordTitle": "Réinitialiser votre mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "studentId": "Numéro d'étudiant",
+    "phone": "Téléphone",
+    "rememberMe": "Se souvenir de moi",
+    "noAccount": "Vous n'avez pas de compte?",
+    "haveAccount": "Vous avez déjà un compte?",
+    "signUp": "S'inscrire",
+    "signIn": "Se connecter",
+    "sendResetLink": "Envoyer le lien de réinitialisation",
+    "backToLogin": "Retour à la connexion",
+    "userType": "Type d'utilisateur",
+    "student": "Étudiant",
+    "teacher": "Enseignant",
+    "admin": "Administrateur"
+  },
+  "student": {
+    "dashboard": {
+      "welcome": "Bienvenue",
+      "overview": "Vue d'ensemble",
+      "quickStats": "Statistiques rapides",
+      "recentActivity": "Activité récente",
+      "upcomingEvents": "Événements à venir"
+    },
+    "documents": {
+      "title": "Mes Documents",
+      "request": "Demander un document",
+      "pending": "En attente",
+      "approved": "Approuvé",
+      "rejected": "Rejeté",
+      "types": {
+        "presence": "Attestation de présence",
+        "inscription": "Attestation d'inscription",
+        "success": "Attestation de réussite",
+        "transcript": "Relevé de notes"
+      }
+    },
+    "grades": {
+      "title": "Mes Notes",
+      "semester": "Semestre",
+      "average": "Moyenne",
+      "subject": "Matière",
+      "exam": "Examen",
+      "tp": "TP",
+      "td": "TD"
+    }
+  },
+  "teacher": {
+    "dashboard": {
+      "welcome": "Espace Enseignant",
+      "myClasses": "Mes Classes",
+      "todaySchedule": "Emploi du temps du jour"
+    },
+    "classes": {
+      "title": "Gestion des Classes",
+      "students": "Étudiants",
+      "subjects": "Matières"
+    },
+    "grades": {
+      "title": "Saisie des Notes",
+      "enterGrades": "Saisir les notes",
+      "validate": "Valider"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "welcome": "Tableau de bord Administration",
+      "statistics": "Statistiques",
+      "totalStudents": "Total Étudiants",
+      "totalTeachers": "Total Enseignants",
+      "pendingDocuments": "Documents en attente",
+      "activeClubs": "Clubs actifs"
+    },
+    "students": {
+      "title": "Gestion des Étudiants",
+      "addStudent": "Ajouter un étudiant",
+      "editStudent": "Modifier l'étudiant",
+      "studentList": "Liste des étudiants"
+    },
+    "documents": {
+      "title": "Gestion des Documents",
+      "approve": "Approuver",
+      "reject": "Rejeter",
+      "generate": "Générer"
+    },
+    "clubs": {
+      "title": "Gestion des Clubs",
+      "approve": "Approuver le club",
+      "reject": "Rejeter le club"
+    }
+  }
+}
