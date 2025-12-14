@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fi'
 import { useAuth } from '../hooks/useAuth'
 import './DashboardLayout.css'
+import logo from '../assets/logos/logo3.png'
 
 const DashboardLayout = ({ userType }) => {
   const { t, i18n } = useTranslation()
@@ -82,17 +83,36 @@ const DashboardLayout = ({ userType }) => {
     }
   }
 
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen)
+
+  // Close sidebar on route change (mobile)
+  React.useEffect(() => {
+    setSidebarOpen(false)
+  }, [navigate])
+
   const navItems = getNavItems()
 
   return (
     <div className="dashboard-layout">
-      {/* Sidebar - Always Open */}
-      <aside className="sidebar">
+      {/* Mobile Overlay */}
+      {sidebarOpen && (
+        <div
+          className="sidebar-overlay"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+
+      {/* Sidebar */}
+      <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
           <div className="logo">
-            <div className="logo-icon">SGE</div>
-            <span className="logo-text">ISSAT KR</span>
+            <img src={logo} alt="SGE Logo" className="logo-image" />
           </div>
+          <button className="sidebar-close-btn" onClick={() => setSidebarOpen(false)}>
+            <FiX />
+          </button>
         </div>
 
         <nav className="sidebar-nav">
@@ -129,6 +149,10 @@ const DashboardLayout = ({ userType }) => {
       <div className="dashboard-main">
         {/* Header */}
         <header className="dashboard-header">
+          <button className="sidebar-toggle" onClick={toggleSidebar}>
+            <FiMenu />
+          </button>
+
           <div className="header-title">
             <h1>{t('nav.dashboard')}</h1>
           </div>

@@ -219,6 +219,102 @@ export const getAttendanceStatusLabel = (status) => {
     return found ? found.label : status
 }
 
+/**
+ * Check if a session is currently in progress
+ * @param {Object} session - Session object with day_of_week, start_time, end_time
+ * @returns {boolean}
+ */
+export const isSessionInProgress = (session) => {
+    const now = new Date()
+    const currentDay = now.getDay() // 0=Sunday, 1=Monday...
+
+    if (session.day_of_week !== currentDay) return false
+
+    const currentTime = now.toTimeString().slice(0, 8) // "HH:MM:SS"
+    const startTime = session.start_time
+    const endTime = session.end_time
+
+    return currentTime >= startTime && currentTime <= endTime
+}
+
+/**
+ * Get time remaining until session ends
+ * @param {Object} session - Session object
+ * @returns {string} Time remaining formatted
+ */
+export const getSessionTimeRemaining = (session) => {
+    const now = new Date()
+    const [endHours, endMinutes] = session.end_time.split(':').map(Number)
+    const endDate = new Date()
+    endDate.setHours(endHours, endMinutes, 0)
+
+    const diffMs = endDate - now
+    if (diffMs <= 0) return 'Terminée'
+
+    const diffMins = Math.floor(diffMs / 60000)
+    if (diffMins < 60) return `${diffMins} min restantes`
+
+    const hours = Math.floor(diffMins / 60)
+    const mins = diffMins % 60
+    return `${hours}h${mins.toString().padStart(2, '0')} restantes`
+}
+
+/**
+ * Get student's absence history for a specific subject
+ * @param {string} studentId 
+ * @param {number} sessionId 
+ */
+export const getStudentAbsenceHistory = async (studentId, sessionId) => {
+    const response = await api.get(`/schedule/attendance/?student=${studentId}&session=${sessionId}&status=ABSENT`)
+    return response.data
+}
+
+/**
+ * Get elimination threshold based on session type
+ * TD/TP weekly (multiple per week): 2 warnings, 3rd = eliminated
+ * TD normal: 3 warnings, 4th = eliminated
+ * @param {string} sessionType - COURS, TD, TP, etc.
+ * @param {boolean} isWeekly - If session occurs multiple times per week
+ * @returns {Object} {warning: number, elimination: number}
+ */
+export const getEliminationThreshold = (sessionType, isWeekly = false) => {
+    if ((sessionType === 'TD' || sessionType === 'TP') && isWeekly) {
+        return { warning: 2, elimination: 3 }
+    }
+    return { warning: 3, elimination: 4 }
+}
+
+/**
+ * Get absence status with warning/elimination info
+ * @param {number} absenceCount 
+ * @param {string} sessionType 
+ * @param {boolean} isWeekly 
+ * @returns {Object} {status: 'ok'|'warning'|'eliminated', message: string}
+ */
+export const getAbsenceStatus = (absenceCount, sessionType, isWeekly = false) => {
+    const threshold = getEliminationThreshold(sessionType, isWeekly)
+
+    if (absenceCount >= threshold.elimination) {
+        return {
+            status: 'eliminated',
+            color: '#ef4444',
+            message: `⛔ Éliminé (${absenceCount} absences)`
+        }
+    }
+    if (absenceCount >= threshold.warning) {
+        return {
+            status: 'warning',
+            color: '#f59e0b',
+            message: `⚠️ Avertissement (${absenceCount}/${threshold.elimination - 1})`
+        }
+    }
+    return {
+        status: 'ok',
+        color: '#10b981',
+        message: `${absenceCount} absence${absenceCount !== 1 ? 's' : ''}`
+    }
+}
+
 export const getDayLabel = (day) => {
     const found = DAYS_OF_WEEK.find(d => d.value === day)
     return found ? found.label : ''
@@ -254,5 +350,10 @@ export default {
     getSessionTypeLabel,
     getAttendanceStatusColor,
     getAttendanceStatusLabel,
-    getDayLabel
+    getDayLabel,
+    isSessionInProgress,
+    getSessionTimeRemaining,
+    getStudentAbsenceHistory,
+    getEliminationThreshold,
+    getAbsenceStatus
 }

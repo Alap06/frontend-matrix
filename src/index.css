@@ -416,3 +416,204 @@ body {
     padding: 0 var(--spacing-sm);
   }
 }
+
+/* Dashboard Responsive Styles */
+.dashboard-page {
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .dashboard-page {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard-page {
+    padding: 1rem;
+  }
+
+  /* Two-column grids become single column */
+  .dashboard-page>div>div[style*="grid-template-columns: 320px"],
+  .dashboard-page>div>div[style*="grid-template-columns: 280px"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-page {
+    padding: 0.75rem;
+  }
+
+  /* Profile header adjustments */
+  .dashboard-page>div>div[style*="linear-gradient"] {
+    padding: 1.25rem !important;
+  }
+
+  /* Cards become full width */
+  .dashboard-page>div>div[style*="repeat(auto-fit"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Reduce card padding */
+  .dashboard-page>div>div[style*="padding: 1.5rem"] {
+    padding: 1rem !important;
+  }
+
+  /* Smaller info grids */
+  .dashboard-page>div>div[style*="minmax(200px"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-page {
+    padding: 0.5rem;
+  }
+
+  /* Extra small screen adjustments */
+  .dashboard-page h1 {
+    font-size: 1.25rem !important;
+  }
+
+  .dashboard-page h3 {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Card Styles */
+:root {
+  --bg-card: #ffffff;
+  --text-muted: var(--text-secondary);
+}
+
+/* Smooth transitions for interactive elements */
+.dashboard-page button,
+.dashboard-page input,
+.dashboard-page select {
+  transition: all 0.2s ease;
+}
+
+/* Focus states */
+.dashboard-page input:focus,
+.dashboard-page select:focus {
+  outline: none;
+  border-color: var(--accent-blue) !important;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+/* Card hover effects */
+.dashboard-page>div>div[style*="--bg-card"]:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Mobile sidebar adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 1050;
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .dashboard-main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+
+/* Pulse animation for live indicators */
+@keyframes livePulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+.live-indicator {
+  animation: livePulse 2s infinite;
+}
+
+/* Modern input styles */
+.modern-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.modern-input:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+/* Modern button styles */
+.modern-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.modern-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.modern-btn:active {
+  transform: translateY(0);
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-badge.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.status-badge.warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.status-badge.danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.status-badge.info {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
