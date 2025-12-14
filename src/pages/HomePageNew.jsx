@@ -132,9 +132,9 @@ const HomePageNew = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-20 relative rounded-xl border border-slate-200 bg-white/50 shadow-2xl backdrop-blur-sm p-2"
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-transparent z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-50/20 via-transparent to-transparent z-10"></div>
             <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"
+              src="src\assets\logos\issat.jpg"
               alt="Dashboard Preview"
               className="rounded-lg w-full shadow-sm"
             />
