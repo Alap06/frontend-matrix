@@ -38,7 +38,12 @@
     "classes": "Classes",
     "students": "Étudiants",
     "teachers": "Enseignants",
-    "administration": "Administration"
+    "administration": "Administration",
+    "services": "Services",
+    "institut": "Institut",
+    "formations": "Formations",
+    "contact": "Contact",
+    "all_services": "Tous les services"
   },
   "home": {
     "title": "Système de Gestion Étudiant",
@@ -244,6 +249,146 @@
       "title": "Gestion des Clubs",
       "approve": "Approuver le club",
       "reject": "Rejeter le club"
+    }
+  },
+  "sections": {
+    "formations": {
+      "title": "Nos Formations",
+      "subtitle": "Découvrez nos offres de formation",
+      "licence": {
+        "title": "Nos Licences",
+        "badge": "Premier Cycle",
+        "description": "Des formations d'excellence pour construire votre avenir professionnel dans les technologies de pointe."
+      },
+      "master": {
+        "title": "Nos Masters",
+        "badge": "Deuxième Cycle",
+        "description": "Spécialisez-vous et développez une expertise pointue grâce à nos masters recherche et professionnels."
+      },
+      "items": {
+        "eea_aii": "Licence en EEA - Automatique et Informatique Industrielle",
+        "gm_cpi": "Licence en Génie Mécanique - Conception et Production Intégrée",
+        "ge_er": "Licence en Génie Énergétique - Énergies Renouvelables",
+        "eea_se": "Licence en EEA - Systèmes Électriques",
+        "isi_iot": "Licence en ISI - Systèmes Embarqués et IoT",
+        "mr_aii": "Master Recherche - Automatique et Informatique Industrielle",
+        "mp_csi": "Master Pro - Commande des Systèmes Industriels",
+        "mr_ds": "Master Recherche - Data Science",
+        "mp_gm": "Master Pro - Génie Mécanique",
+        "mp_mmsi": "Master Pro - Management et Maintenance des Systèmes Industriels"
+      }
+    },
+    "institut": {
+      "presentation": {
+        "badge": "Présentation",
+        "title": "L'Institut Supérieur des Sciences Appliquées et de Technologie de Kairouan",
+        "description": "Créé en vertu du décret n°1971 du 14 Juillet 2005, l'ISSAT de Kairouan est un établissement public à caractère scientifique et technologique de l'Université de Kairouan."
+      },
+      "stats": {
+        "creation": "Date de création",
+        "students": "Étudiants",
+        "teachers": "Enseignants",
+        "sub_creation": "Décret n°1971",
+        "sub_students": "Inscrits",
+        "sub_teachers": "Taux 1:11"
+      },
+      "direction": {
+        "title": "La Direction",
+        "director": "Le Directeur",
+        "sec_gen": "Le Secrétaire Général"
+      },
+      "infrastructure": {
+        "title": "Infrastructure de l'établissement",
+        "subtitle": "Nos équipements",
+        "description": "Un environnement d'apprentissage moderne équipé de laboratoires de pointe.",
+        "teaching": "Enseignement",
+        "computing": "Informatique",
+        "electrical": "Électrique & Auto",
+        "mechanical": "Mécanique",
+        "physics": "Physique & Énergie",
+        "other": "Autre"
+      }
+    },
+    "organization": {
+      "title": "Départements & Responsables",
+      "badge": "Organisation",
+      "subtitle": "Administration & Responsables",
+      "badge_enc": "Encadrement",
+      "description": "Une équipe pédagogique et administrative dévouée.",
+      "administration": "Administration",
+      "masters_coordinators": "Coordinateurs Masters",
+      "departments": {
+        "title": "Nos Départements",
+        "description": "Les pôles d'enseignement et de recherche.",
+        "gm": "Génie Mécanique",
+        "ge": "Génie Électrique",
+        "mpi": "Mathématiques, Physique & Informatique",
+        "dir": "Dir."
+      },
+      "roles": {
+        "director": "Directeur",
+        "director_studies": "Directeur des Études",
+        "director_internships": "Directeur des Stages",
+        "director_4c": "Directeur du Centre 4C",
+        "mediation": "Centre de Médiation"
+      }
+    },
+    "clubs_section": {
+      "title": "Nos Clubs",
+      "badge": "Vie Estudiantine",
+      "description": "Rejoignez une communauté dynamique et participez à des projets innovants.",
+      "read_more": "En savoir plus",
+      "items": {
+        "techno": {
+          "description": "Participation à des compétitions nationales et internationales."
+        },
+        "tpl": {
+          "description": "Engagement dans des hackathons et des projets open-source."
+        },
+        "ai": {
+          "description": "Club étudiant dédié à l’intelligence artificielle et aux technologies."
+        },
+        "tunivisions": {
+          "description": "Club orienté média, engagement étudiant et image de l’institut."
+        }
+      },
+      "categories": {
+        "robotics": "Robotique & Automation",
+        "coding": "Programmation & Dev",
+        "ai": "Intelligence Artificielle",
+        "media": "Média & Culture"
+      }
+    },
+    "services_section": {
+      "title": "Vos Services en Ligne",
+      "badge": "Espace Numérique",
+      "description": "Une plateforme intégrée pour faciliter votre quotidien universitaire.",
+      "items": {
+        "admin_requests": {
+          "title": "Demandes Administratives",
+          "description": "Générez vos attestations d'inscription, de présence et relevés de notes."
+        },
+        "claims": {
+          "title": "Espace Réclamations",
+          "description": "Une plateforme transparente pour déposer et suivre vos requêtes."
+        },
+        "schooling": {
+          "title": "Suivi de Scolarité",
+          "description": "Accédez à tout moment à vos résultats d'examens et moyennes."
+        },
+        "schedule": {
+          "title": "Emploi du Temps",
+          "description": "Consultez votre planning de cours et dates d'examens."
+        },
+        "associative": {
+          "title": "Vie Associative",
+          "description": "Découvrez les clubs de l'institut et gérez vos événements."
+        },
+        "resources": {
+          "title": "Ressources & Bibliothèque",
+          "description": "Accédez au catalogue de la bibliothèque et aux supports de cours."
+        }
+      }
     }
   }
 }

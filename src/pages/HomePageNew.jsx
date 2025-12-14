@@ -11,6 +11,12 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import ContactSection from '../components/ContactSection'
 import StatsSection from '../components/StatsSection'
+import FormationsSection from '../components/FormationsSection'
+import InstitutSection from '../components/InstitutSection'
+import ClubsSection from '../components/ClubsSection'
+import DepartementsSection from '../components/DepartementsSection'
+import AdministrationSection from '../components/AdministrationSection'
+import ServicesSection from '../components/ServicesSection'
 
 const HomePageNew = () => {
   const { t, i18n } = useTranslation()
@@ -136,38 +142,25 @@ const HomePageNew = () => {
         </div>
       </section>
 
-      {/* Features Section - Bento Grid */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">{t('home.features.title')}</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">Une suite d'outils complète pour gérer votre vie universitaire avec simplicité et efficacité.</p>
-          </div>
+      {/* Institut Section */}
+      <InstitutSection />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`group relative p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 ${feature.className}`}
-              >
-                <div className="h-12 w-12 rounded-lg bg-slate-900/5 flex items-center justify-center text-slate-900 mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <feature.icon className="text-2xl" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
-                <p className="text-slate-600 leading-relaxed">{feature.description}</p>
 
-                <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <FiArrowRight className="text-slate-400" />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Administration Section */}
+      <AdministrationSection />
+
+      {/* Departements Section */}
+      <DepartementsSection />
+
+      {/* Clubs Section */}
+      <ClubsSection />
+
+      {/* Formations Section */}
+      <FormationsSection />
+
+
+      {/* Services Section */}
+      <ServicesSection />
 
       {/* Stats Section - Clean */}
       <section className="py-24 border-y border-slate-100 bg-slate-50/50">

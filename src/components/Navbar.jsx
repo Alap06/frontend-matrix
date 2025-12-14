@@ -53,34 +53,35 @@ const Navbar = () => {
       icon: FiHome
     },
     {
-      label: 'Formations',
-      icon: FiBook,
-      dropdown: [
-        { label: 'Licence', path: '#licence' },
-        { label: 'Master', path: '#master' },
-        { label: 'Ingénieur', path: '#ingenieur' },
-      ]
-    },
-    {
-      label: 'Institut',
+      label: t('nav.institut'),
       icon: FiInfo,
       dropdown: [
-        { label: 'Présentation', path: '#presentation' },
-        { label: 'Départements', path: '#departements' },
-        { label: 'Vie Estudiantine', path: '#vie-estudiantine' },
+        { label: t('sections.institut.presentation.badge'), path: '#presentation' },
+        { label: t('nav.administration'), path: '#administration' },
+        { label: t('sections.organization.departments.title'), path: '#departements' },
+        { label: t('nav.clubs'), path: '#clubs' },
       ]
     },
     {
-      label: 'Services',
+      label: t('nav.formations'),
+      icon: FiBook,
+      dropdown: [
+        { label: t('sections.formations.licence.title'), path: '#licence' },
+        { label: t('sections.formations.master.title'), path: '#master' },
+      ]
+    },
+
+    {
+      label: t('nav.services'),
       icon: FiFileText,
       dropdown: [
-        { label: 'Documents', path: '#documents' },
-        { label: 'Clubs', path: '#clubs' },
-        { label: 'Bibliothèque', path: '#bibliotheque' },
+        { label: t('nav.all_services'), path: '#services' },
+        { label: t('nav.documents'), path: '#documents' },
+        { label: t('sections.services_section.items.resources.title'), path: '#bibliotheque' },
       ]
     },
     {
-      label: 'Contact',
+      label: t('nav.contact'),
       path: '#contact',
       icon: FiMail
     },
@@ -107,7 +108,7 @@ const Navbar = () => {
           >
             <div className="absolute inset-0 -m-2 rounded-xl bg-gradient-to-br from-[#C07F10]/10 to-[#0B1A74]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <img
-              src="/src/assets/logos/logo3.png"
+              src="/src/assets/logos/logo4.png"
               alt="ISSAT Kairouan"
               className={`transition-all duration-300 ${scrolled ? 'w-12 h-12' : 'w-14 h-14'} object-contain rounded-xl`}
               style={{ filter: 'drop-shadow(0 2px 8px rgba(192, 127, 16, 0.3))' }}
